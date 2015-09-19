@@ -1,7 +1,9 @@
+import javax.ejb.Stateful;
 import javax.ejb.Stateless;
+import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 
-
-@Stateless
+@Stateful
 public class StatelessBean {
 
 	private int value;

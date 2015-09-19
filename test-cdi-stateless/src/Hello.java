@@ -31,6 +31,9 @@ public class Hello extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().println("<p>Start value:" + bean.getI() +  "</p>");
+		TESTLookup lookup = new TESTLookup();
+		lookup.coolStuff();
+
 	}
 
 	/**
